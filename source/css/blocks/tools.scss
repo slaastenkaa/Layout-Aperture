@@ -1,0 +1,74 @@
+.tools__sidebar {
+    margin-bottom: 2.5rem;
+}
+
+.tools__sidebar--title-inner {
+    margin: 0;
+    margin-bottom: 0.1rem;
+    font-family: inherit;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $gray;
+}
+
+.tools__sidebar--title {
+    margin: 0;
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.tools__sidebar--text {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+}
+.tools__sidebar--button {
+    padding: 11px 20px 11px 42px;
+}
+
+.tools__aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+    padding: 20px 0;
+    background-color: #000000;
+    background-image: url('../img/camera.jpg');
+    background-repeat: no-repeat;
+    background-position: left top 0px;
+    min-height: 340px;
+}
+
+@media (min-width: $tablet-width) {
+    .tools {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tools__sidebar {
+        margin-top: 30%;
+        padding: 0 18%;
+    }
+
+    .tools__aside {
+        min-height: 540px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .tools__sidebar {
+        margin-top: 22%;
+        padding: 0 20%;
+    }
+
+    .tools__sidebar--title {
+        margin-bottom: 2rem;
+        font-size: 40px;
+    }
+
+    .tools__sidebar--text {
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,46 @@
+.leafs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+    margin-bottom: 2.5rem;
+    padding: 20px 0;
+    background-color: #000000;
+    background-image: url('../img/bg-leafs.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top 0px;
+    min-height: 500px;
+}
+
+.leafs-container {
+    margin-bottom: 9rem;
+}
+
+.leafs__title {
+    margin: 0;
+    font-family: inherit;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.leafs__text {
+    margin: 0;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray;
+}
+
+@media (min-width: $desktop-width) {
+    .leafs {
+        min-height: 600px;
+    }
+
+    .leafs-container {
+        margin-left: 65%;
+        margin-bottom: 14rem;
+        width: 25%;
+    }
+}

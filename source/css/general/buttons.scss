@@ -1,0 +1,49 @@
+.button {
+  display: block;
+  padding: 11px 20px;
+  font-family: inherit;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: $black;
+  background: $white;
+  border: 2px solid $white;
+  border-radius: 14px;
+  text-decoration: none;
+}
+  
+.button:hover {
+  background: $gray;
+  border: 2px solid $gray;
+  color: $white;
+}
+  
+.button:active {
+  background: $gray;
+  border: 2px solid $gray;
+  color: $white;
+}
+
+.button-text {
+  position: relative;
+}
+
+.button-text::before {
+  position: absolute;
+  top: -5px;
+  left: -35px;
+  width: 32px;
+  height: 32px;
+  background-color: $black;
+  border-radius: 50%;
+  content: "";
+}
+
+.button-text:hover::before {
+  background-color:white;
+}
+
+.button-text:active::before {
+  background-color:white;
+}

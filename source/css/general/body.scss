@@ -1,0 +1,55 @@
+@import "./viewports.scss";
+@import "./colors.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: 'Poppins', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white;
+  background-color: $black;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 668px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1070px;
+    padding: 0;
+  }
+}

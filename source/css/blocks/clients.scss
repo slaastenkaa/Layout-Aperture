@@ -1,0 +1,49 @@
+.clients {
+    margin-bottom: 2.5rem;
+}
+
+.clients__title {
+    margin: 0;
+    margin-bottom: 0.2rem;
+    font-family: inherit;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.clients__text {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: $gray;
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (min-width: $desktop-width) {
+    .clients {
+        margin-top: 8rem;
+        margin-bottom: 12rem;
+    }
+
+    .clients__title {
+        margin-bottom: 0.8rem;
+        font-size: 40px;
+    }
+
+    .clients__list {
+        justify-content: space-around;
+    }
+}

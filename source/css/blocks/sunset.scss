@@ -1,0 +1,53 @@
+.sunset {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: auto;
+    margin-bottom: 2.5rem;
+    padding: 20px 0;
+    background-color: #000000;
+    background-image: url('../img/bg-sunset.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top 0px;
+    min-height: 500px;
+}
+
+.sunset-container {
+    margin-bottom: 9rem;
+}
+
+.sunset__title {
+    margin: 0;
+    font-family: inherit;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sunset__text {
+    margin: 0;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray;
+}
+
+@media (min-width: $tablet-width) {
+    .sunset {
+        margin: 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .sunset {
+        min-height: 600px;
+    }
+
+    .sunset-container {
+        margin-left: 65%;
+        margin-bottom: 14rem;
+        width: 25%;
+    }
+}
+
