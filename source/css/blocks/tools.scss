@@ -15,7 +15,7 @@
 .tools__sidebar--title {
     margin: 0;
     font-family: inherit;
-    font-size: 28px;
+    font-size: 2.5rem;
     line-height: 32px;
 }
 
@@ -37,6 +37,7 @@
     background-color: #000000;
     background-image: url('../img/camera.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: left top 0px;
     min-height: 340px;
 }

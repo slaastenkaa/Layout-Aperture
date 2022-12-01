@@ -28,17 +28,24 @@ body {
   padding: 0 30px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.aside__list {
+  display: flex;
+  justify-content: end;
+  gap: 0.6rem;
+  margin: 0 1rem;
+  padding: 0;
+  list-style: none;
 }
 
-.link {
-  text-decoration: none;
+.aside__item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
-.aside__item svg {
-  width: auto;
+.aside__item:hover,
+.aside__item:hover svg {
+  opacity: 0.5;
 }
 
 @media (min-width: 681px) {
@@ -79,6 +86,7 @@ img {
   border: 2px solid #ffffff;
   border-radius: 14px;
   text-decoration: none;
+  cursor: not-allowed;
 }
 
 .button:hover {
@@ -288,17 +296,8 @@ img {
   margin: 0;
   margin-bottom: 2rem;
   font-family: inherit;
-  font-size: 54px;
+  font-size: 4rem;
   line-height: 59px;
-}
-
-.aside__list {
-  display: flex;
-  justify-content: end;
-  gap: 0.6rem;
-  margin: 0 1rem;
-  padding: 0;
-  list-style: none;
 }
 
 @media (min-width: 1170px) {
@@ -318,7 +317,7 @@ img {
 
 .cards__title {
   margin: 0;
-  font-size: 30px;
+  font-size: 2.5rem;
   line-height: 42px;
   text-align: center;
 }
@@ -391,6 +390,9 @@ img {
     padding: 0 30px;
     min-height: 450px;
   }
+  .card__content--item-text {
+    min-height: 120px;
+  }
   .card__content--item-inner {
     padding-top: 70%;
   }
@@ -407,6 +409,9 @@ img {
   }
   .card__content--item-inner {
     padding-top: 80%;
+  }
+  .card__content--item-text {
+    min-height: 80px;
   }
 }
 .sunset {
@@ -476,7 +481,7 @@ img {
 .tools__sidebar--title {
   margin: 0;
   font-family: inherit;
-  font-size: 28px;
+  font-size: 2.5rem;
   line-height: 32px;
 }
 
@@ -499,6 +504,7 @@ img {
   background-color: #000000;
   background-image: url("../img/camera.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: left top 0px;
   min-height: 340px;
 }
@@ -582,7 +588,7 @@ img {
   margin: 0;
   margin-bottom: 0.2rem;
   font-family: inherit;
-  font-size: 30px;
+  font-size: 2.5rem;
   line-height: 42px;
   text-align: center;
 }
@@ -681,7 +687,7 @@ img {
 .help__title {
   margin: 0;
   font-family: inherit;
-  font-size: 30px;
+  font-size: 2.5rem;
   line-height: 42px;
   text-align: center;
 }

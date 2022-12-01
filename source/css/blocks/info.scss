@@ -26,17 +26,8 @@
     margin: 0;
     margin-bottom: 2rem;
     font-family: inherit;
-    font-size: 54px;
+    font-size: 4rem;
     line-height: 59px;
-}
-
-.aside__list {
-    display: flex;
-    justify-content: end;
-    gap: 0.6rem;
-    margin: 0 1rem;
-    padding: 0;
-    list-style: none;
 }
 
 @media (min-width: $desktop-width) {

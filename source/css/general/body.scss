@@ -31,17 +31,24 @@ body {
   padding: 0 30px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.aside__list {
+  display: flex;
+  justify-content: end;
+  gap: 0.6rem;
+  margin: 0 1rem;
+  padding: 0;
+  list-style: none;
 }
 
-.link {
-    text-decoration: none;
+.aside__item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
 }
 
-.aside__item svg{
-  width: auto;
+.aside__item:hover,
+.aside__item:hover svg {
+  opacity: 0.5;;
 }
 
 @media (min-width: $tablet-width) {
