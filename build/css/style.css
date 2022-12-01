@@ -37,6 +37,10 @@ img {
   text-decoration: none;
 }
 
+.aside__item svg {
+  width: auto;
+}
+
 @media (min-width: 681px) {
   .container {
     max-width: 668px;
@@ -116,6 +120,11 @@ img {
   margin: 1rem 0;
 }
 
+.nav__logo:hover svg,
+.nav__logo:active svg {
+  fill: #C0C0C0;
+}
+
 .nav__button-close {
   display: none;
 }
@@ -137,6 +146,17 @@ img {
 
 .nav__item {
   margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.nav__item--links {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav__item--links:hover,
+.nav__item--links:active {
+  color: #C0C0C0;
 }
 
 .nav__button {
@@ -440,7 +460,7 @@ img {
   }
 }
 .tools__sidebar {
-  margin-bottom: 2.5rem;
+  margin: 5rem 0 5rem;
 }
 
 .tools__sidebar--title-inner {
@@ -555,7 +575,7 @@ img {
   }
 }
 .clients {
-  margin-bottom: 2.5rem;
+  margin: 5rem 0 5rem;
 }
 
 .clients__title {
@@ -647,8 +667,8 @@ img {
   }
 }
 .help {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2.5rem;
+  margin: 5rem 0 4rem;
+  padding-bottom: 4rem;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -703,6 +723,15 @@ img {
   margin-bottom: 1rem;
 }
 
+.footer__content--sidebar-column:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.footer__content--logo:hover svg,
+.footer__content--logo:active svg {
+  fill: #C0C0C0;
+}
+
 .footer__content--text {
   margin: 0;
   font-family: inherit;
@@ -737,8 +766,18 @@ img {
   text-decoration: none;
 }
 
+.footer__content--sidebar__item:hover a,
+.footer__content--sidebar__item:active a {
+  opacity: 0.5;
+}
+
 .footer__inner--links {
   margin-bottom: 0.5rem;
+}
+
+.footer__inner--links:hover,
+.footer__inner--links:active {
+  opacity: 0.4;
 }
 
 .footer__inner--links a {
@@ -747,6 +786,15 @@ img {
   line-height: 20px;
   color: #C0C0C0;
   text-decoration: none;
+}
+
+.footer__inner--item {
+  cursor: pointer;
+}
+
+.footer__inner--item:hover svg,
+.footer__inner--item:active svg {
+  fill: #ffffff;
 }
 
 .footer__inner--list {
@@ -762,6 +810,9 @@ img {
     display: flex;
     justify-content: space-between;
     padding-right: 2rem;
+  }
+  .footer__content--sidebar-column {
+    margin-bottom: 0;
   }
   .footer__inner {
     display: flex;

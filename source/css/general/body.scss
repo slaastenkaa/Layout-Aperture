@@ -40,6 +40,10 @@ img {
     text-decoration: none;
 }
 
+.aside__item svg{
+  width: auto;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     max-width: 668px;

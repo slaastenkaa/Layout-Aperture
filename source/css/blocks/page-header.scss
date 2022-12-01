@@ -2,6 +2,11 @@
   margin: 1rem 0;
 }
 
+.nav__logo:hover svg, 
+.nav__logo:active svg {
+  fill: $gray
+}
+
 .nav__button-close {
   display: none;
 }
@@ -23,6 +28,17 @@
 
 .nav__item {
   margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.nav__item--links {
+  color: $white;
+  text-decoration: none;
+}
+
+.nav__item--links:hover,
+.nav__item--links:active {
+  color: $gray;
 }
 
 .nav__button {
