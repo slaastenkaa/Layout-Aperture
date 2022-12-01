@@ -41,14 +41,9 @@ body {
 }
 
 .aside__item {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-}
-
-.aside__item:hover,
-.aside__item:hover svg {
-  opacity: 0.5;;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 @media (min-width: $tablet-width) {

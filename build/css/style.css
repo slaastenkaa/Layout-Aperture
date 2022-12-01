@@ -43,11 +43,6 @@ body {
   gap: 0.3rem;
 }
 
-.aside__item:hover,
-.aside__item:hover svg {
-  opacity: 0.5;
-}
-
 @media (min-width: 681px) {
   .container {
     max-width: 668px;
@@ -103,6 +98,7 @@ body {
 
 .button-text {
   position: relative;
+  transition: background-color 1s ease-out;
 }
 
 .button-text::before {
@@ -114,6 +110,7 @@ body {
   background-color: #000000;
   border-radius: 50%;
   content: "";
+  transition: background-color 2s ease-out;
 }
 
 .button-text:hover::before {
@@ -126,6 +123,10 @@ body {
 
 .page-header {
   margin: 1rem 0;
+}
+
+.nav__logo {
+  width: fit-content;
 }
 
 .nav__logo:hover svg,

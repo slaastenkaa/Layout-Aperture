@@ -2,6 +2,10 @@
   margin: 1rem 0;
 }
 
+.nav__logo {
+  width: fit-content;
+}
+
 .nav__logo:hover svg, 
 .nav__logo:active svg {
   fill: $gray
